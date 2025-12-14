@@ -21,7 +21,7 @@ export default function AuthSimpleLayout({ children, title, description }: Props
                     <div className="mb-8 flex flex-col items-center gap-4">
                         <Link href={route('home')} className="flex flex-col items-center gap-2 font-medium">
                             <div className="mb-1 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-blue-500 p-1">
-                                <span className="text-xl font-bold text-white">AI</span>
+                                <span className="text-xl font-bold text-white">TH</span>
                             </div>
                         </Link>
 
@@ -36,7 +36,7 @@ export default function AuthSimpleLayout({ children, title, description }: Props
 
                     {/* Footer */}
                     <div className="mt-12 text-center text-xs text-gray-500">
-                        &copy; {new Date().getFullYear()} AI Gym Coach. All rights reserved.
+                        &copy; {new Date().getFullYear()} ThriveHelp. All rights reserved.
                     </div>
                 </div>
             </div>

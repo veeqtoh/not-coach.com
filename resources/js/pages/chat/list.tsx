@@ -51,7 +51,7 @@ export default function List({ session }: ChatPageProps) {
 
     return (
         <div className="min-h-screen bg-[#0A0A0A]">
-            <Head title="Chat | AI Gym Coach">
+            <Head title="Chat | ThriveHelp">
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet" />
             </Head>
@@ -63,7 +63,7 @@ export default function List({ session }: ChatPageProps) {
                         <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-blue-500">
                             <MessageSquare className="h-4 w-4 text-white" />
                         </div>
-                        <span className="text-xl font-bold text-white">AI Gym Coach</span>
+                        <span className="text-xl font-bold text-white">ThriveHelp</span>
                     </div>
 
                     <form onSubmit={handleCreateSession}>
@@ -87,7 +87,7 @@ export default function List({ session }: ChatPageProps) {
                             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-blue-500 p-1.5">
                                 <MessageSquare className="h-4 w-4 text-white" />
                             </div>
-                            <h2 className="text-lg font-semibold text-white">Fitness Assistant</h2>
+                            <h2 className="text-lg font-semibold text-white">First Aid Assistant</h2>
                         </div>
                     </div>
 
@@ -155,7 +155,7 @@ export default function List({ session }: ChatPageProps) {
                 </div>
 
                 {/* Footer */}
-                <div className="mt-8 text-center text-xs text-gray-500">&copy; {new Date().getFullYear()} AI Gym Coach. All rights reserved.</div>
+                <div className="mt-8 text-center text-xs text-gray-500">&copy; {new Date().getFullYear()} ThriveHelp. All rights reserved.</div>
             </div>
         </div>
     );

@@ -67,7 +67,9 @@ final class AppServiceProvider extends ServiceProvider
      */
     private function configureUrls(): void
     {
-        URL::forceScheme('https');
+        if (!$this->app->isLocal()) {
+            URL::forceScheme('https');
+        }
     }
 
     /**

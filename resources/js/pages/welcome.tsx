@@ -6,7 +6,7 @@ export default function Welcome() {
 
     return (
         <>
-            <Head title="AI Gym Coach">
+            <Head title="ThriveHelp">
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet" />
             </Head>
@@ -15,7 +15,7 @@ export default function Welcome() {
                 <header className="border-b border-[#1E1E1E] bg-[#0A0A0A]">
                     <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 lg:px-8">
                         <div className="flex items-center">
-                            <span className="text-xl font-bold text-white">AI Gym Coach</span>
+                            <span className="text-xl font-bold text-white">ThriveHelp</span>
                         </div>
                         <nav className="flex items-center space-x-4">
                             {auth.user ? (
@@ -55,28 +55,31 @@ export default function Welcome() {
                         <div className="grid gap-12 lg:grid-cols-2 lg:gap-8">
                             <div className="flex flex-col justify-center">
                                 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                                    Your Personal{' '}
+                                    Your Compassionate{' '}
                                     <span className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">
-                                        Fitness Assistant
+                                        Wellbeing Guide
                                     </span>
                                 </h1>
                                 <p className="mt-6 max-w-3xl text-xl text-gray-300">
-                                    Get personalized workout and nutrition plans tailored to your specific goals, schedule, and health conditions.
+                                    A safe, stigma-free space to explore your feelings. Our AI companion offers supportive conversation and helps identify patterns to guide you toward calm.
                                 </p>
                                 <div className="mt-10 flex items-center gap-x-6">
                                     <Link
                                         href={route('register')}
                                         className="rounded-full bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-3 text-base font-medium text-white shadow-lg transition-all hover:from-purple-600 hover:to-blue-600"
                                     >
-                                        Start your fitness journey
+                                        Start Your Journey
                                     </Link>
                                     <Link href={route('login')} className="text-base font-medium text-white">
                                         Learn more <span aria-hidden="true">→</span>
                                     </Link>
                                 </div>
+                                <p className="mt-4 text-sm text-gray-400">
+                                    <strong>Important:</strong> ThriveHelp offers supportive guidance, not crisis care. If you're in immediate distress, please call 999 or the Samaritans at 116 123.
+                                </p>
                             </div>
                             <div className="relative flex items-center justify-center lg:justify-end">
-                                {/* Stylized Fitness Icon/Illustration */}
+                                {/* Stylized Wellness Icon/Illustration */}
                                 <div className="relative h-[400px] w-[400px] rounded-full bg-gradient-to-r from-purple-500/20 to-blue-500/20 p-1">
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         <svg
@@ -86,15 +89,11 @@ export default function Welcome() {
                                             xmlns="http://www.w3.org/2000/svg"
                                         >
                                             <path
-                                                d="M20.25 5.25H3.75C2.92157 5.25 2.25 5.92157 2.25 6.75V17.25C2.25 18.0784 2.92157 18.75 3.75 18.75H20.25C21.0784 18.75 21.75 18.0784 21.75 17.25V6.75C21.75 5.92157 21.0784 5.25 20.25 5.25Z"
+                                                d="M14.828 14.828L12 12M12 12L9.172 9.172M12 12L14.828 9.172M12 12L9.172 14.828M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
                                                 stroke="currentColor"
                                                 strokeWidth="1.5"
                                                 strokeLinecap="round"
                                                 strokeLinejoin="round"
-                                            />
-                                            <path
-                                                d="M15.75 12C15.75 12.1989 15.671 12.3897 15.5303 12.5303C15.3897 12.671 15.1989 12.75 15 12.75H9C8.80109 12.75 8.61032 12.671 8.46967 12.5303C8.32902 12.3897 8.25 12.1989 8.25 12C8.25 11.8011 8.32902 11.6103 8.46967 11.4697C8.61032 11.329 8.80109 11.25 9 11.25H15C15.1989 11.25 15.3897 11.329 15.5303 11.4697C15.671 11.6103 15.75 11.8011 15.75 12Z"
-                                                fill="currentColor"
                                             />
                                         </svg>
                                     </div>
@@ -108,8 +107,8 @@ export default function Welcome() {
                 <section className="py-24">
                     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                         <div className="mx-auto max-w-3xl text-center">
-                            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Personalized Fitness Coaching</h2>
-                            <p className="mt-4 text-lg text-gray-300">Our AI coach creates custom plans based on your unique profile and goals</p>
+                            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Supportive, Early Guidance</h2>
+                            <p className="mt-4 text-lg text-gray-300">Our AI companion is designed to help you navigate stress and anxiety with empathy and insight</p>
                         </div>
                         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                             {/* Feature 1 */}
@@ -120,13 +119,13 @@ export default function Welcome() {
                                             strokeLinecap="round"
                                             strokeLinejoin="round"
                                             strokeWidth={2}
-                                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                                            d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
                                         />
                                     </svg>
                                 </div>
-                                <h3 className="text-xl font-semibold text-white">Workout Plans</h3>
+                                <h3 className="text-xl font-semibold text-white">Stigma-Free Conversation</h3>
                                 <p className="mt-2 text-gray-400">
-                                    Customized exercise routines based on your fitness level, goals, and available equipment.
+                                    A confidential space to express your thoughts without judgment, available whenever you need it.
                                 </p>
                             </div>
 
@@ -138,12 +137,12 @@ export default function Welcome() {
                                             strokeLinecap="round"
                                             strokeLinejoin="round"
                                             strokeWidth={2}
-                                            d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
                                         />
                                     </svg>
                                 </div>
-                                <h3 className="text-xl font-semibold text-white">Nutrition Guidance</h3>
-                                <p className="mt-2 text-gray-400">Meal plans and dietary recommendations tailored to support your fitness journey.</p>
+                                <h3 className="text-xl font-semibold text-white">Early-Signal Detection</h3>
+                                <p className="mt-2 text-gray-400">Identifies patterns in mood and stress to help you recognise and address concerns proactively.</p>
                             </div>
 
                             {/* Feature 3 */}
@@ -154,13 +153,13 @@ export default function Welcome() {
                                             strokeLinecap="round"
                                             strokeLinejoin="round"
                                             strokeWidth={2}
-                                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z"
                                         />
                                     </svg>
                                 </div>
-                                <h3 className="text-xl font-semibold text-white">Health Monitoring</h3>
+                                <h3 className="text-xl font-semibold text-white">Personalised Guidance</h3>
                                 <p className="mt-2 text-gray-400">
-                                    Track your progress and receive adjustments to your plan as you advance toward your goals.
+                                    Offers supportive strategies and coping techniques tailored to your unique situation and feelings.
                                 </p>
                             </div>
                         </div>
@@ -172,7 +171,7 @@ export default function Welcome() {
                     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                         <div className="mx-auto max-w-3xl text-center">
                             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">How It Works</h2>
-                            <p className="mt-4 text-lg text-gray-300">Simple steps to your personalized fitness journey</p>
+                            <p className="mt-4 text-lg text-gray-300">A simple, supportive path to better mental wellbeing</p>
                         </div>
                         <div className="mt-16">
                             <div className="relative">
@@ -186,9 +185,9 @@ export default function Welcome() {
                                             1
                                         </div>
                                         <div className="mt-6 rounded-2xl border border-[#1E1E1E] bg-[#0F0F0F] p-6 md:mt-0 md:w-5/12 md:pr-12">
-                                            <h3 className="text-xl font-semibold text-white">Create Your Profile</h3>
+                                            <h3 className="text-xl font-semibold text-white">Share How You Feel</h3>
                                             <p className="mt-2 text-gray-400">
-                                                Answer questions about your age, fitness level, goals, and health conditions.
+                                                In a private chat, talk about what's on your mind—your mood, stress, sleep, or anything affecting your wellbeing.
                                             </p>
                                         </div>
                                     </div>
@@ -201,9 +200,9 @@ export default function Welcome() {
                                             2
                                         </div>
                                         <div className="mt-6 rounded-2xl border border-[#1E1E1E] bg-[#0F0F0F] p-6 md:mt-0 md:w-5/12 md:pl-12">
-                                            <h3 className="text-xl font-semibold text-white">Receive Your Plan</h3>
+                                            <h3 className="text-xl font-semibold text-white">Receive Supportive Insight</h3>
                                             <p className="mt-2 text-gray-400">
-                                                Get a customized workout and nutrition plan designed specifically for you.
+                                                Our AI helps identify patterns and offers empathetic guidance, coping strategies, and a clearer perspective.
                                             </p>
                                         </div>
                                     </div>
@@ -216,9 +215,9 @@ export default function Welcome() {
                                             3
                                         </div>
                                         <div className="mt-6 rounded-2xl border border-[#1E1E1E] bg-[#0F0F0F] p-6 md:mt-0 md:w-5/12 md:pr-12">
-                                            <h3 className="text-xl font-semibold text-white">Track Your Progress</h3>
+                                            <h3 className="text-xl font-semibold text-white">Find Your Path Forward</h3>
                                             <p className="mt-2 text-gray-400">
-                                                Follow your plan and receive ongoing adjustments as you progress toward your goals.
+                                                Get help understanding your next steps, whether that's self-care strategies or connections to further resources in Scotland.
                                             </p>
                                         </div>
                                     </div>
@@ -235,12 +234,12 @@ export default function Welcome() {
                             <div className="px-6 py-24 sm:px-12 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-16">
                                 <div>
                                     <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                                        Ready to transform your fitness?
+                                        Ready to explore your wellbeing?
                                         <br />
-                                        Start your journey today.
+                                        Start a conversation today.
                                     </h2>
                                     <p className="mt-6 max-w-xl text-lg text-purple-100">
-                                        Join thousands of users who have already achieved their fitness goals with our AI coach.
+                                        Take the first step in a supportive, judgment-free space designed for your mental health journey.
                                     </p>
                                 </div>
                                 <div className="mt-8 lg:mt-0 lg:shrink-0">
@@ -248,7 +247,7 @@ export default function Welcome() {
                                         href={route('register')}
                                         className="inline-block rounded-full bg-white px-12 py-4 text-base font-medium text-purple-600 shadow-md transition-all hover:bg-gray-100"
                                     >
-                                        Get started for free
+                                        Begin Your Journey
                                     </Link>
                                 </div>
                             </div>
@@ -261,7 +260,8 @@ export default function Welcome() {
                     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                         <div className="flex flex-col items-center justify-between md:flex-row">
                             <div className="mb-6 md:mb-0">
-                                <span className="text-xl font-bold text-white">AI Gym Coach</span>
+                                <span className="text-xl font-bold text-white">ThriveHelp CIC</span>
+                                <p className="mt-2 text-sm text-gray-400">A social enterprise for Scotland's mental wellbeing.</p>
                             </div>
                             <div className="flex space-x-6">
                                 <a href="#" className="text-gray-400 hover:text-white">
@@ -273,10 +273,14 @@ export default function Welcome() {
                                 <a href="#" className="text-gray-400 hover:text-white">
                                     Contact
                                 </a>
+                                <a href="#" className="text-gray-400 hover:text-white">
+                                    Safety
+                                </a>
                             </div>
                         </div>
                         <div className="mt-8 border-t border-[#1E1E1E] pt-8 text-center text-sm text-gray-400">
-                            &copy; {new Date().getFullYear()} AI Gym Coach. All rights reserved.
+                            &copy; {new Date().getFullYear()} ThriveHelp CIC. All rights reserved.
+                            <p className="mt-2">ThriveHelp offers guidance, not crisis or medical care. In an emergency, call 999.</p>
                         </div>
                     </div>
                 </footer>

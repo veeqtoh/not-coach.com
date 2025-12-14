@@ -36,7 +36,7 @@ export default function Login({ status, canResetPassword }: LoginProps) {
 
     return (
         <div className="min-h-screen bg-[#0A0A0A]">
-            <Head title="Log in | AI Gym Coach">
+            <Head title="Log in | ThriveHelp">
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet" />
             </Head>
@@ -47,7 +47,7 @@ export default function Login({ status, canResetPassword }: LoginProps) {
                     <div className="mb-8 flex flex-col items-center gap-4">
                         <a href={route('home')} className="flex flex-col items-center gap-2 font-medium">
                             <div className="mb-1 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-blue-500 p-1">
-                                <span className="text-xl font-bold text-white">AI</span>
+                                <span className="text-xl font-bold text-white">TH</span>
                             </div>
                         </a>
 
@@ -144,7 +144,7 @@ export default function Login({ status, canResetPassword }: LoginProps) {
 
                     {/* Footer */}
                     <div className="mt-12 text-center text-xs text-gray-500">
-                        &copy; {new Date().getFullYear()} AI Gym Coach. All rights reserved.
+                        &copy; {new Date().getFullYear()} ThriveHelp. All rights reserved.
                     </div>
                 </div>
             </div>
